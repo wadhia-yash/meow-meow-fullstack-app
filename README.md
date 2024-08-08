@@ -28,3 +28,8 @@ docker-compose up --build
 ## Accessing the Application
 
 Once the services are up, you can access the [frontend](http://localhost:3000) at http://localhost:3000 and the [backend API](http://localhost:8080) at http://localhost:8080.
+
+## Hypothetical API Design
+Following is the link for [Hypothetical API Design](https://github.com/wadhia-yash/meow-meow-fullstack-app/blob/master/backend-app/README.md)
+
+**Note**: The database used is postgresql and it is free database created using the Aiven Service

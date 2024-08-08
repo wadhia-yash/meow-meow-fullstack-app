@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend-app
+    environment:
+      DATABASE_URL: postgres://avnadmin:AVNS__stQULz4kfKc7jvcdtT@pg-assignment-assignment-db.g.aivencloud.com:27907/defaultdb?sslmode=require
+    ports:
+      - "8080:8080"
+    command: uvicorn app:app --host 0.0.0.0 --port 8080 --reload
+
+  frontend:
+    build: ./frontend-app
+    ports:
+      - "3000:3000"
+
+volumes:
+  postgres_data:

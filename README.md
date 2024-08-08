@@ -19,7 +19,7 @@ The architecture is designed to be modular, allowing independent development, te
 To start the services, ensure Docker is installed, navigate to the root directory of the project, and run:
 
 ```bash
-docker-compose up --build
+docker compose up --build
 ```
 
 ## Environment Variables
